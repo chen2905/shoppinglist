@@ -1,0 +1,37 @@
+{
+  "name": "shoppinglist",
+  "version": "1.0.0",
+  "description": "mern project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen2905/shoppinglist.git"
+  },
+  "keywords": [
+    "mern",
+    "stack",
+    "shopping",
+    "list"
+  ],
+  "author": "CG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chen2905/shoppinglist/issues"
+  },
+  "homepage": "https://github.com/chen2905/shoppinglist#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "color": "^3.1.2",
+    "concurrently": "^5.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.26"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
