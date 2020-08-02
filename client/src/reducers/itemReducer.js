@@ -18,6 +18,19 @@ export default function (state = initialState, action){
             return {
                 ...state // spread operator ... return all the objects stored in the states. in this case, will be the items 
             }
+        case DELETE_ITEM:
+                console.log(`inside reducer delete Item action`)
+                return {
+                    ...state, // spread operator ... return all the objects stored in the states. in this case, will be the items 
+                    items:state.items
+                    .filter(item=> item.id!==action.payload)
+                }
+        case ADD_ITEM:
+                    console.log(`inside reducer add Item action`)
+                    return {
+                        ...state, // spread operator ... return all the objects stored in the states. in this case, will be the items 
+                        items:[action.payload,...state.items]
+                    }
             default:
                 return state
     }
