@@ -1,14 +1,18 @@
 
 import {GET_ITEMS, ADD_ITEM,DELETE_ITEM,ITEMS_LOADING} from './types'
 import axios from 'axios'
-
+/*
+dispatch is a function of the Redux store. You call store. dispatch to dispatch an action. 
+This is the only way to trigger a state change. With React Redux, your components never access 
+the store directly - connect does it for you.
+*/
 
 export const getItems = () => (dispatch) => {
     dispatch(setItemsLoading());
     axios
       .get('/api/items')//this where we query the server to return the data for front end
       .then(res =>
-        dispatch({
+        dispatch({//change the state by dispatch
           type: GET_ITEMS,
           payload: res.data
         })
