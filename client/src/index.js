@@ -14,3 +14,5 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+//I think this is the file being run first, it render the app component, which 
+//contains other children components

@@ -34,7 +34,7 @@ connectDB()//it is an async function exported by db.js, now it is being called a
 
 // use routes
 
-app.use('/api/items',items)
+app.use('/api/items',items)//items is routes that handles '/api/items' request
 //serve static assets if in production
 if(process.env.NODE_ENV ==='production'){
     //set static folder

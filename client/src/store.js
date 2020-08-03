@@ -13,3 +13,4 @@ const store = createStore(rootReducer, composeWithDevTools(
   ));
 
 export default store
+//this is a bit confuse, at this stage i don't really like redux!
