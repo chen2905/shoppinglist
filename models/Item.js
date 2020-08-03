@@ -1,6 +1,6 @@
 const mongoose =require('mongoose')
 const Schema =mongoose.Schema
-
+//I think at this moment mongoose object is already connect to mongodb, which is done in db.js
 
 //Create Schema
 
